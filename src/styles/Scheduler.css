@@ -1,0 +1,43 @@
+/* Style the main calendar container */
+.my-calendar-container {
+  border-radius: 5px;
+}
+
+/* Style the calendar header */
+.my-calendar-header {
+  background-color: red;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Style the calendar event */
+.my-calendar-event {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+/* Style the event tooltip */
+.my-calendar-event-tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* Style the selected event */
+.my-calendar-event-selected {
+  border: 2px solid #007bff;
+}
+
+/* Style the current time indicator */
+.my-calendar-current-time-indicator {
+  background-color: #ff0000;
+}
+
+/* Style the calendar navigation buttons */
+.my-calendar-nav-button {
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+}

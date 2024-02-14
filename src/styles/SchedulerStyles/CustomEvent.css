@@ -1,0 +1,7 @@
+.custom-event-container {
+  font-size: 14px;
+}
+
+.custom-event-container > p:last-child {
+  font-size: 10px;
+}

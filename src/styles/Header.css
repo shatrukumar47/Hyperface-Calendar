@@ -1,0 +1,46 @@
+.header-container {
+  padding: 10px 20px;
+  border-bottom: 1px solid #c7c8cc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-content > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #b4b4b8;
+}
+
+.text-content > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #068fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.icon-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon-content > div:first-child,
+.icon-content > div:last-child {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: grey;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.icon-content > div:first-child:hover,
+.icon-content > div:last-child:hover {
+  background: rgba(233, 231, 231, 0.5);
+}
