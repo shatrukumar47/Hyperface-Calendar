@@ -93,7 +93,7 @@ const Scheduler = () => {
         events={eventData}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 700 }}
+        style={{ height: 600 }}
         defaultView="month"
         defaultDate={new Date()}
         components={{
