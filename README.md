@@ -28,8 +28,11 @@ npm run start
 
 
 ## Snaps
-### Home
-![Screenshot (614)](https://github.com/shatrukumar47/Hyperface-Calendar/assets/123942835/1f709720-ffba-4c90-b5c4-9984d05830ff)
+![Screenshot (615)](https://github.com/shatrukumar47/Hyperface-Calendar/assets/123942835/10ed6da8-cfee-430b-ae22-25496f873c29)
+
+![Screenshot (616)](https://github.com/shatrukumar47/Hyperface-Calendar/assets/123942835/7ea7ba58-29da-4287-aa7a-7a87120d5ca2)
+
+![Screenshot (617)](https://github.com/shatrukumar47/Hyperface-Calendar/assets/123942835/5d40ae62-8e7f-4ca4-82c7-881ff4a4fc90)
 
 
 
