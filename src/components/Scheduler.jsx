@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { Calendar, momentLocalizer } from "react-big-calendar";
-import moment from "moment";
+import { Calendar, dayjsLocalizer } from "react-big-calendar";
 import { events } from "../data/data";
 import "../styles/Scheduler.css";
 import CustomToolbar from "./SchedulerComponents/CustomToolbar";
 import CustomEvent from "./SchedulerComponents/CustomEvent";
 import CustomTimeSlotWrapper from "./SchedulerComponents/CustomTimeSlotWrapper";
-import CustomTimeIndicator from "./SchedulerComponents/CustomTimeIndicator";
 
 import withDragAndDrop from "react-big-calendar/lib/addons/dragAndDrop";
 import "react-big-calendar/lib/addons/dragAndDrop/styles.css";
 import EventViewModal from "./EventViewModal";
 import { useDisclosure } from "@chakra-ui/react";
+import dayjs from "dayjs";
 
-const localizer = momentLocalizer(moment);
+const localizer = dayjsLocalizer(dayjs);
 const DraggableCalendar = withDragAndDrop(Calendar);
 
 const Scheduler = () => {
@@ -87,20 +86,22 @@ const Scheduler = () => {
   };
 
   return (
-    <div className="my-calendar-container">
+    <div
+      className="my-calendar-container"
+      style={{ width: "100%", height: "calc(100vh - 100px)" }}
+    >
       <DraggableCalendar
         localizer={localizer}
         events={eventData}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 600 }}
-        defaultView="month"
+        style={{ height: "100%", width: "100%" }}
+        defaultView="day"
         defaultDate={new Date()}
         components={{
           toolbar: CustomToolbar,
           event: CustomEvent,
           timeSlotWrapper: CustomTimeSlotWrapper,
-          timeIndicator: CustomTimeIndicator,
         }}
         onEventDrop={handleEventDrop}
         onEventResize={handleEventResize}
@@ -109,7 +110,9 @@ const Scheduler = () => {
         onSelectEvent={(event) => handleEventView(event)}
       />
 
-      {viewEvent && <EventViewModal isOpen={isOpen} onClose={onClose} event={viewEvent} />}
+      {viewEvent && (
+        <EventViewModal isOpen={isOpen} onClose={onClose} event={viewEvent} />
+      )}
     </div>
   );
 };

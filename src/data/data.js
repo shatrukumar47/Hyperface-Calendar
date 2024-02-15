@@ -1,25 +1,27 @@
+import dayjs from "dayjs";
+
 export const events = [
   {
     id: 1,
     title: "Meeting",
-    start: new Date(2024, 2, 14, 10, 0),
-    end: new Date(2024, 2, 15, 12, 0),
+    start: dayjs("2024-02-15T08:00:00").toDate(),
+    end: dayjs("2024-02-15T09:00:00").toDate(),
     type: "normal",
     visibility: "public",
   },
   {
     id: 2,
     title: "Stretching",
-    start: new Date(2024, 2, 14, 14, 0),
-    end: new Date(2024, 2, 18, 15, 30),
+    start: dayjs("2024-02-15T10:00:00").toDate(),
+    end: dayjs("2024-02-15T11:00:00").toDate(),
     type: "stretching",
     visibility: "public",
   },
   {
     id: 3,
     title: "Busy",
-    start: new Date(2024, 2, 17),
-    end: new Date(2024, 2, 19),
+    start: dayjs("2024-02-15T13:00:00").toDate(),
+    end: dayjs("2024-02-15T14:00:00").toDate(),
     type: "all-day",
     visibility: "private",
   },
